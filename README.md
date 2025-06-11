@@ -20,8 +20,8 @@ A hybrid music recommender system built with Python and Streamlit. This project 
 ### Prerequisites
 
 - Python 3.11+
-- [Docker](https://www.docker.com/get-started) (optional, for containerized deployment)
-- [DVC](https://dvc.org/) (if using data versioning)
+- [Docker](https://www.docker.com/get-started)
+- [DVC](https://dvc.org/) 
 
 ### Installation
 
