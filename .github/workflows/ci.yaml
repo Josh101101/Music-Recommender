@@ -88,4 +88,4 @@ jobs:
             --deployment-group-name hybridrecsysdeploymentgroup \
             --s3-location bucket=hybridrecsysdeploymentbucket1,key=deployment.zip,bundleType=zip \
             --file-exists-behavior OVERWRITE \
-            --region ap-south-1
+            --region us-east-1
