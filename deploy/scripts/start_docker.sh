@@ -3,10 +3,10 @@
 exec > /home/ubuntu/start_docker.log 2>&1
 
 echo "Logging in to ECR..."
-aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 586794443089.dkr.ecr.us-east-1.amazonaws.com/music_recommend_system
+aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 586794443089.dkr.ecr.us-east-1.amazonaws.com/music_recommend_system
  
 echo "Pulling Docker image..."
-docker pull 891377050051.dkr.ecr.ap-south-1.amazonaws.com/spotify_hybrid_recsys:latest
+docker pull 586794443089.dkr.ecr.us-east-1.amazonaws.com/music_recommend_system:latest
 
 echo "Checking for existing container..."
 if [ "$(docker ps -q -f name=hybrid_recsys)" ]; then
